@@ -691,3 +691,16 @@ footer small {
         right: 10%;
     }
 }
+.instagram-wrapper {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 18px;
+    background: #ffffff;
+}
+
+.instagram-wrapper .instagram-media {
+    margin: 0 auto !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 540px !important;
+}
