@@ -1,0 +1,693 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f5f1e8;
+    color: #17232b;
+
+    font-family: "DM Sans", sans-serif;
+
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 78px;
+
+    padding: 0 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: rgba(245, 241, 232, 0.86);
+
+    backdrop-filter: blur(15px);
+
+    border-bottom: 1px solid rgba(23, 35, 43, 0.09);
+
+    z-index: 1000;
+}
+
+.logo {
+    color: #17232b;
+
+    text-decoration: none;
+
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.logo span {
+    color: #e46d3c;
+}
+
+.nav-links {
+    display: flex;
+
+    gap: 35px;
+}
+
+.nav-links a {
+    color: #52616a;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #e46d3c;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 100vh;
+
+    padding: 170px 9% 100px;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 88% 25%,
+            rgba(228, 109, 60, 0.20),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 10% 80%,
+            rgba(87, 171, 154, 0.20),
+            transparent 28%
+        ),
+        #f5f1e8;
+}
+
+.hero-content {
+    max-width: 850px;
+
+    position: relative;
+
+    z-index: 2;
+
+    animation: heroIn 1s ease forwards;
+}
+
+.eyebrow {
+    color: #e46d3c;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 4px;
+}
+
+.hero h1 {
+    margin-top: 22px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(55px, 8vw, 105px);
+
+    line-height: 0.98;
+
+    letter-spacing: -5px;
+
+    font-weight: 600;
+}
+
+.hero h1 span {
+    color: #e46d3c;
+}
+
+.intro {
+    max-width: 620px;
+
+    margin-top: 32px;
+
+    color: #66747b;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+.view-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    margin-top: 35px;
+
+    padding: 14px 23px;
+
+    border-radius: 50px;
+
+    color: white;
+
+    background: #17343d;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s;
+}
+
+.view-button:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 15px 30px rgba(23, 52, 61, 0.25);
+}
+
+.view-button span {
+    font-size: 18px;
+}
+
+
+/* =========================
+   DECORATIVE SHAPES
+========================= */
+
+.shape {
+    position: absolute;
+
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+.shape-one {
+    width: 350px;
+    height: 350px;
+
+    right: -110px;
+    top: 18%;
+
+    background: #f4c2a9;
+
+    animation:
+        floating 7s ease-in-out infinite;
+}
+
+.shape-two {
+    width: 190px;
+    height: 190px;
+
+    right: 22%;
+    bottom: 8%;
+
+    background: #b9ddd4;
+
+    animation:
+        floating 6s ease-in-out infinite reverse;
+}
+
+.play-decoration {
+    position: absolute;
+
+    right: 28%;
+    top: 24%;
+
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #17343d;
+
+    color: #f5f1e8;
+
+    font-size: 22px;
+
+    padding-left: 4px;
+
+    box-shadow:
+        0 15px 35px rgba(23, 52, 61, 0.18);
+
+    animation:
+        pulse 3s ease-in-out infinite;
+}
+
+
+/* =========================
+   WORK
+========================= */
+
+.work {
+    padding: 120px 7%;
+
+    background: #ffffff;
+}
+
+.section-top {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: end;
+
+    gap: 40px;
+
+    margin-bottom: 55px;
+}
+
+.section-top h2 {
+    margin-top: 12px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(42px, 6vw, 70px);
+
+    line-height: 1;
+
+    font-weight: 600;
+
+    letter-spacing: -3px;
+}
+
+.section-top h2 span {
+    color: #e46d3c;
+}
+
+.work-description {
+    max-width: 300px;
+
+    color: #858f93;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    text-align: right;
+}
+
+
+/* =========================
+   VIDEO GALLERY
+========================= */
+
+.video-gallery {
+    columns: 3 300px;
+
+    column-gap: 22px;
+}
+
+.video-card {
+    display: block;
+
+    position: relative;
+
+    margin-bottom: 22px;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    background: #eef2f0;
+
+    break-inside: avoid;
+
+    box-shadow:
+        0 6px 22px rgba(23, 52, 61, 0.08);
+
+    opacity: 0;
+
+    transform: translateY(35px);
+
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease,
+        box-shadow 0.4s ease;
+}
+
+.video-card.show {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+.video-card:hover {
+    box-shadow:
+        0 20px 45px rgba(23, 52, 61, 0.16);
+
+    transform: translateY(-5px);
+}
+
+
+/*
+    IMPORTANT:
+
+    width = 100%
+    height = auto
+
+    This keeps each video's natural aspect ratio.
+*/
+
+.video-card video {
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+
+    background: #17232b;
+}
+
+
+/* =========================
+   VIDEO INFORMATION
+========================= */
+
+.video-info {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 15px 18px;
+
+    background: #ffffff;
+}
+
+.video-info span {
+    color: #e46d3c;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+.video-info p {
+    color: #52616a;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    padding: 120px 7%;
+
+    background: #e9f0ed;
+}
+
+.about-content {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 120px 1fr;
+
+    gap: 45px;
+
+    padding: 60px;
+
+    border-radius: 30px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 15px 50px rgba(23, 52, 61, 0.08);
+}
+
+.about-number {
+    color: #e46d3c;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 55px;
+
+    font-weight: 600;
+}
+
+.about-text h2 {
+    max-width: 750px;
+
+    margin-top: 15px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(38px, 5vw, 62px);
+
+    line-height: 1;
+
+    letter-spacing: -2px;
+}
+
+.about-text h2 span {
+    color: #e46d3c;
+}
+
+.about-text > p:last-child {
+    max-width: 680px;
+
+    margin-top: 25px;
+
+    color: #777f84;
+
+    font-size: 16px;
+
+    line-height: 1.9;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 70px 20px;
+
+    text-align: center;
+
+    background: #17343d;
+
+    color: white;
+}
+
+.footer-logo {
+    font-size: 25px;
+
+    font-weight: 700;
+}
+
+.footer-logo span {
+    color: #f1a27e;
+}
+
+footer p {
+    margin-top: 12px;
+
+    color: #aebfc3;
+}
+
+.footer-line {
+    width: 60px;
+
+    height: 2px;
+
+    margin: 25px auto;
+
+    background: #f1a27e;
+}
+
+footer small {
+    color: #81979d;
+}
+
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+@keyframes heroIn {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(35px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+}
+
+@keyframes floating {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-25px);
+    }
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+    .nav-links {
+        gap: 18px;
+    }
+
+    .hero {
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+
+    .hero h1 {
+        letter-spacing: -3px;
+    }
+
+    .section-top {
+        align-items: start;
+
+        flex-direction: column;
+    }
+
+    .work-description {
+        text-align: left;
+    }
+
+    .video-gallery {
+        columns: 2 250px;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+
+        padding: 40px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 550px) {
+
+    .navbar {
+        height: 68px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .logo {
+        font-size: 19px;
+    }
+
+    .hero h1 {
+        font-size: 55px;
+    }
+
+    .intro {
+        font-size: 15px;
+    }
+
+    .video-gallery {
+        columns: 1;
+    }
+
+    .work {
+        padding: 90px 6%;
+    }
+
+    .about {
+        padding: 80px 6%;
+    }
+
+    .about-content {
+        padding: 30px;
+    }
+
+    .play-decoration {
+        width: 55px;
+        height: 55px;
+
+        right: 10%;
+    }
+}
