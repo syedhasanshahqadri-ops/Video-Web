@@ -1,293 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>My Video Editing Work</title>
-
+    <script>(function(){var t;try{t=localStorage.getItem("theme")}catch(e){}if(!t)t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.dataset.theme=t})()</script>
     <link rel="stylesheet" href="style.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
-    <script async src="https://www.instagram.com/embed.js"></script>
-
 <body>
 
-    <!-- NAVBAR -->
+    <div class="progress"></div>
 
+    <!-- NAVBAR (floating dock) -->
     <nav class="navbar">
-
-        <a href="#home" class="logo">
-            My<span>Edits</span>
-        </a>
-
+        <a href="#home" class="logo">My<span>Edits</span></a>
         <div class="nav-links">
             <a href="#home">Home</a>
             <a href="#work">Work</a>
             <a href="#about">About</a>
         </div>
-
+        <button class="theme-btn" id="themeBtn" aria-label="Switch dark / light mode"><span class="sun">☀</span><span class="moon">☾</span></button>
     </nav>
 
-
     <!-- HERO -->
-
     <section class="hero" id="home">
-
         <div class="hero-content">
-
-            <p class="eyebrow">
-                VIDEO EDITING
-            </p>
-
-            <h1>
-                My Video
-                <br>
-                <span>Editing</span> Work
-            </h1>
-
-            <p class="intro">
-                A collection of video edits, creative experiments
-                and visual stories. Exploring different styles,
-                transitions, pacing, color and sound through video.
-            </p>
-
-            <a href="#work" class="view-button">
-                Explore Edits
-                <span>↓</span>
-            </a>
-
+            <p class="eyebrow">VIDEO EDITING</p>
+            <h1>My Video<br><span>Editing</span> Work</h1>
+            <p class="intro">A collection of video edits, creative experiments and visual stories. Exploring different styles, transitions, pacing, color and sound through video.</p>
+            <a href="#work" class="view-button">Explore Edits <span>↓</span></a>
         </div>
 
+        <!-- 3D film ring -->
+        <div class="film-scene" aria-hidden="true">
+            <div class="film-tilt">
+                <div class="play-decoration">▶</div>
+                <div class="film-ring"><div class="frame" style="--k:0"><i>01</i><b>▶</b><span>CUT</span></div><div class="frame" style="--k:1"><i>02</i><b>▶</b><span>COLOR</span></div><div class="frame" style="--k:2"><i>03</i><b>▶</b><span>SOUND</span></div><div class="frame" style="--k:3"><i>04</i><b>▶</b><span>PACE</span></div><div class="frame" style="--k:4"><i>05</i><b>▶</b><span>STORY</span></div><div class="frame" style="--k:5"><i>06</i><b>▶</b><span>FX</span></div><div class="frame" style="--k:6"><i>07</i><b>▶</b><span>MOTION</span></div><div class="frame" style="--k:7"><i>08</i><b>▶</b><span>GRADE</span></div></div>
+            </div>
+        </div>
 
         <!-- Decorative elements -->
-
         <div class="shape shape-one"></div>
-
         <div class="shape shape-two"></div>
-
-        <div class="play-decoration">
-            ▶
-        </div>
-
     </section>
-
 
     <!-- WORK -->
-
     <section class="work" id="work">
-
         <div class="section-top">
-
             <div>
-
-                <p class="eyebrow">
-                    SELECTED WORK
-                </p>
-
-                <h2>
-                    Video <span>Experiments</span>
-                </h2>
-
+                <p class="eyebrow">SELECTED WORK</p>
+                <h2>Video <span>Experiments</span></h2>
             </div>
-
-            <p class="work-description">
-                Different edits, styles, stories and visual
-                experiments.
-            </p>
-
+            <p class="work-description">Different edits, styles, stories and visual experiments.</p>
         </div>
-
 
         <!-- INSTAGRAM REELS GALLERY -->
-
         <div class="video-gallery">
-
-
             <!-- VIDEO 01 -->
-
             <div class="video-card">
-
                 <div class="instagram-wrapper">
-
-                    <blockquote
-                        class="instagram-media"
-                        data-instgrm-permalink="https://www.instagram.com/reel/DcgzLxWs94l/"
-                        data-instgrm-version="14">
-                    </blockquote>
-
+                    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DcgzLxWs94l/" data-instgrm-version="14"></blockquote>
                 </div>
-
-                <div class="video-info">
-                    <span>01</span>
-                    <p>Video Edit</p>
-                </div>
-
+                <div class="video-info"><span>01</span><p>Video Edit</p></div>
             </div>
-
 
             <!-- VIDEO 02 -->
-
             <div class="video-card">
-
                 <div class="instagram-wrapper">
-
-                    <blockquote
-                        class="instagram-media"
-                        data-instgrm-permalink="https://www.instagram.com/reel/DbNtR7EMXsI/"
-                        data-instgrm-version="14">
-                    </blockquote>
-
+                    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DbNtR7EMXsI/" data-instgrm-version="14"></blockquote>
                 </div>
-
-                <div class="video-info">
-                    <span>02</span>
-                    <p>Creative Edit</p>
-                </div>
-
+                <div class="video-info"><span>02</span><p>Creative Edit</p></div>
             </div>
-
 
             <!-- VIDEO 03 -->
-
             <div class="video-card">
-
                 <div class="instagram-wrapper">
-
-                    <blockquote
-                        class="instagram-media"
-                        data-instgrm-permalink="https://www.instagram.com/reel/DbDi2TDMTVm/"
-                        data-instgrm-version="14">
-                    </blockquote>
-
+                    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DbDi2TDMTVm/" data-instgrm-version="14"></blockquote>
                 </div>
-
-                <div class="video-info">
-                    <span>03</span>
-                    <p>Visual Story</p>
-                </div>
-
+                <div class="video-info"><span>03</span><p>Visual Story</p></div>
             </div>
-
 
             <!-- VIDEO 04 -->
-
             <div class="video-card">
-
                 <div class="instagram-wrapper">
-
-                    <blockquote
-                        class="instagram-media"
-                        data-instgrm-permalink="https://www.instagram.com/reel/Da7bInos1bW/"
-                        data-instgrm-version="14">
-                    </blockquote>
-
+                    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/Da7bInos1bW/" data-instgrm-version="14"></blockquote>
                 </div>
-
-                <div class="video-info">
-                    <span>04</span>
-                    <p>Motion Edit</p>
-                </div>
-
+                <div class="video-info"><span>04</span><p>Motion Edit</p></div>
             </div>
-
 
             <!-- VIDEO 05 -->
-
             <div class="video-card">
-
                 <div class="instagram-wrapper">
-
-                    <blockquote
-                        class="instagram-media"
-                        data-instgrm-permalink="https://www.instagram.com/reel/DaXjDyZMH3W/"
-                        data-instgrm-version="14">
-                    </blockquote>
-
+                    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DaXjDyZMH3W/" data-instgrm-version="14"></blockquote>
                 </div>
-
-                <div class="video-info">
-                    <span>05</span>
-                    <p>Creative Cut</p>
-                </div>
-
+                <div class="video-info"><span>05</span><p>Creative Cut</p></div>
             </div>
 
-
         </div>
-
     </section>
-
 
     <!-- ABOUT -->
-
     <section class="about" id="about">
-
         <div class="about-content">
-
-            <div class="about-number">
-                01
-            </div>
-
+            <div class="about-number">01</div>
             <div class="about-text">
-
-                <p class="eyebrow">
-                    A LITTLE ABOUT ME
-                </p>
-
-                <h2>
-                    Turning footage into
-                    <span>visual stories.</span>
-                </h2>
-
-                <p>
-                    I'm a video editor interested in creating engaging
-                    visual experiences through editing, pacing,
-                    transitions, sound and color. I enjoy experimenting
-                    with different styles to give every video its own
-                    visual identity.
-                </p>
-
+                <p class="eyebrow">A LITTLE ABOUT ME</p>
+                <h2>Turning footage into <span>visual stories.</span></h2>
+                <p>I'm a video editor interested in creating engaging visual experiences through editing, pacing, transitions, sound and color. I enjoy experimenting with different styles to give every video its own visual identity.</p>
             </div>
-
         </div>
-
     </section>
 
-
     <!-- FOOTER -->
-
     <footer>
-
-        <div class="footer-logo">
-            My<span>Edits</span>
-        </div>
-
-        <p>
-            More creative edits coming soon.
-        </p>
-
+        <div class="footer-logo">My<span>Edits</span></div>
+        <p>More creative edits coming soon.</p>
         <div class="footer-line"></div>
-
-        <small>
-            © 2026 My Video Editing Work
-        </small>
-
+        <small>© 2026 My Video Editing Work</small>
     </footer>
 
-
     <!-- INSTAGRAM EMBED SCRIPT -->
-
     <script async src="https://www.instagram.com/embed.js"></script>
-
     <script src="script.js"></script>
-
 </body>
-
 </html>
